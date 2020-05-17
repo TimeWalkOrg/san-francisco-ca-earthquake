@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Real World Terrain Helper</title>
+
+    <link href="https://developers.google.com/maps/documentation/javascript/examples/default.css" rel="stylesheet">
+    <link href="RWT_Helper.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css" rel="stylesheet">
+
+    <script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.6.0/clipboard.min.js"></script>
+    <script src="RWT_Helper.jscript"></script>
+    <script src="RWT_Coords.jscript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDz0rQ5_imGCXQ8qfx-fF7sQaEzqaSDXzw&libraries=places"></script>
+</head>
+<body onkeydown="OnKeyDown(event)" onkeyup="OnKeyUp(event)">
+	<h2 class="ui center aligned header" style="margin-top:20px">Real World Terrain Helper</h2>
+    <div class="ui container">
+    	<div class="ui two column stackable grid">
+    		<div class="ten wide column">
+    			<p>
+			        <div id="search-block">
+			            <div class="ui fluid icon input">
+			            	<input type="text" placeholder="Location name..." id="search-address" value=""/>
+			            	<i class="inverted circular search link icon" id="btnSearch"></i>
+			            </div>
+			        </div>
+		        </p>
+			    <p>
+			        <div id="map-canvas"></div>
+			    </p>
+			    <p>
+			    	<div class="ui info message">Hold CTRL to move the entire frame or markers.</div>
+			    </p>
+		        <p>
+			        <div id="POIs" class="hidden">
+			            <h2 class="ui dividing header">Points of interest</h2>
+			            <div class="ui ignored info message">Double click on POI title to edit</div>
+			            <div id="poiContainer"></div>
+			        </div>
+		        </p>
+		        <p>
+			        <div id="download-links-srtm" class="hidden">
+			            <h2 class="ui dividing header">Heightmaps</h2>
+			            <div class="ui info message">Download the files and extract the files «*.asc» from archives in the folder «{Project}/RWT_Cache/Heightmaps».</div>
+			            <div id="dlHeightmaps"></div>
+					</div>
+					<div id="download-links-srtm30" class="hidden">
+			            <h2 class="ui dividing header">Heightmaps</h2>
+			            <div class="ui info message">Download the files and extract the files «*.hgt» from archives in the folder «{Project}/RWT_Cache/Heightmaps».</div>
+			            <div id="dlHeightmaps30"></div>
+			        </div>
+			    </p>
+		    </div>
+		    <div class="six wide column">
+		    	<p><button class="fluid ui primary button" id="btnCreateSelector">Place selector</button></p>
+				<p><button class="fluid ui button" id="btnOpenOSM">Show Open Street Map</button></p>
+	            <div class="ui sub header">Elevation</div>
+				<select name="elevationprovider" class="ui selection fluid dropdown" id="elevation-provider" style="height: 43px;">
+					<option value="srtm">SRTM</option>
+					<option value="srtm30">SRTM30</option>
+                    <option value="bing">Bing Maps</option>
+					<option value="mapbox">Mapbox</option>
+				</select>
+
+                <h4 class="ui dividing header">Top-Left</h4>
+                <div id='topLatRow'>Latitude: <div id="TLLat" class="ildiv"></div></div>
+                <div>Longitude: <div id="TLLon" class="ildiv"></div></div>
+                
+                <h4 class="ui dividing header">Bottom-Right</h4>
+                <div id='bottomLatRow'>Latitude: <div id="BRLat" class="ildiv"></div></div>
+                <div>Longitude: <div id="BRLon" class="ildiv"></div></div>
+                
+                <h4 class="ui dividing header" id="AreaSize">Area</h4>
+                <div>Width: <div id="AreaWidth" class="ildiv">0</div> km</div>
+                <div>Height: <div id="AreaHeight" class="ildiv">0</div> km</div>
+				<div>Area: <div id="AreaArea" class="ildiv">0</div> km²</div>
+				<div class="grouped fields">
+					<div class="field">
+						<div class="ui checkbox">
+							<input name="showgrid" id="showgrid" type="checkbox">
+							<label>Show grid</label>
+						</div>
+					</div>
+					<div class="field">
+						<div class="ui checkbox">
+							<input name="bestrect" id="bestrect" type="checkbox">
+							<label>Show best rect <i id="bestrectHint" class="question circle icon" data-content="Adjust the selected area to match the size of the tiles"></i></label>
+						</div>
+					</div>
+					<div class="field">
+						<button class="fluid ui primary button" id="btnSelectBestRect" style="display: none">Adjust the selected area</button>
+					</div>
+				</div>
+                <h4 class="ui dividing header">Move selector</h4>
+                <div id="MoveSelector">
+                    <div align="center">
+                        <img src="images/arrow-left-icon.png" alt="Left" title="Left" onclick="MoveSelectorLeft();"/>
+                        <img src="images/arrow-right-icon.png" alt="Right" title="Right" onclick="MoveSelectorRight();" />
+                        <img src="images/arrow-up-icon.png" alt="Up" title="Up" onclick="MoveSelectorUp();" />
+                        <img src="images/arrow-down-icon.png" alt="Down" title="Down" onclick="MoveSelectorDown();" />
+                    </div>
+                </div>
+                <div class="ui segment">
+                	<div class="ui attached label">Copy this to Clipboard</div>
+	                <div id="coordNode" onclick="SelectText('coordNode')"></div>
+	                <button class="ui button icon fluid" id="copyBtn" data-clipboard-target="#coordNode">Copy <i class="icon copy"></i></button>
+                </div>
+                <p><button class="fluid ui button" id="btnAddPOI">Add POI</button></p>
+                <p><button class="fluid ui button" id="btnShowLinks">Show download links</button></p>
+		    </div>
+	    </div>
+    </div>
+</body>
+</html>

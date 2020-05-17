@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+#map-canvas {
+    width:700px;
+    height:600px;
+}
+
+.hidden {
+    display: none;
+}
+
+.wrong {
+    color: red;
+}
+
+.ildiv {
+    display:inline;
+}
+
+.poi > div {
+    display: inline-block;
+}
+
+.poiIndex {
+    text-align: center;
+}
+
+.poiDelete {
+	cursor: pointer;
+}
+
+#coordNode {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.field {
+    margin-top: 5px;
+}
