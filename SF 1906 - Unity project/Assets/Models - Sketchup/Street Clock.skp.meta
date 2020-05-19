@@ -3,7 +3,17 @@ guid: 8fc39bbf1ceb2064a9402749ed44b621
 SketchUpImporter:
   serializedVersion: 20100
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Z55.34
+    second: {fileID: 2100000, guid: 5ab66baadf8b83348bd599f8071041ea, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Z55.34
+    second: {fileID: 2800000, guid: 62956ff9f9a2b264e81d9bc74be62766, type: 3}
   materials:
     materialImportMode: 1
     materialName: 2
@@ -84,7 +94,7 @@ SketchUpImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.0254
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
