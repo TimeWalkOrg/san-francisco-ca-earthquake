@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/mainScene.unity
     guid: 560667ef387520d42a14b5aebed30fb3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/XR Rig - Controllers.unity
     guid: 19303eab9d6cf794a8be98fc7046754e
   m_configObjects:
