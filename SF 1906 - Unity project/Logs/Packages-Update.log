@@ -46,3 +46,11 @@ The following packages were added:
   com.unity.ugui@1.0.0
 The following packages were updated:
   com.unity.render-pipelines.universal from version 7.1.6 to 8.0.1
+
+=== Mon Jun  1 16:32:24 2020
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.render-pipelines.universal from version 8.0.1 to 8.1.0
