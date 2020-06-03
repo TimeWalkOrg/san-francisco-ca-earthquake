@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 25cef12bcf71e8c42bff4aff1467c3a0
+guid: ae0e9422196e4d545a00fcd8c9665063
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -52,7 +52,7 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 0
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 1
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0

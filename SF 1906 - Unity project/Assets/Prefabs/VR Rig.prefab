@@ -115,7 +115,7 @@ MonoBehaviour:
   m_LineType: 1
   m_MaxRaycastDistance: 30
   m_ReferenceFrame: {fileID: 0}
-  m_Velocity: 8
+  m_Velocity: 15
   m_Acceleration: 9.8
   m_AdditionalFlightTime: 0.5
   m_EndPointDistance: 30
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LineWidth: 0.02
   m_OverrideInteractorLineLength: 1
-  m_LineLength: 10
+  m_LineLength: 20
   m_WidthCurve:
     serializedVersion: 2
     m_Curve:
@@ -365,8 +365,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 518981054858672434}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.676, y: 0.033, z: -0.353}
-  m_LocalScale: {x: 0.64686, y: 0.029959077, z: 0.64686}
+  m_LocalPosition: {x: -0.676, y: 0, z: -0.353}
+  m_LocalScale: {x: 1.0374341, y: 0.04804837, z: 1.0374341}
   m_Children:
   - {fileID: 518981056550318130}
   - {fileID: 518981055661488500}
@@ -10431,7 +10431,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.1
-  far clip plane: 1000
+  far clip plane: 2500
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -10622,7 +10622,7 @@ MonoBehaviour:
   m_LineType: 1
   m_MaxRaycastDistance: 30
   m_ReferenceFrame: {fileID: 0}
-  m_Velocity: 8
+  m_Velocity: 15
   m_Acceleration: 9.8
   m_AdditionalFlightTime: 0.5
   m_EndPointDistance: 30
@@ -10758,7 +10758,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LineWidth: 0.02
   m_OverrideInteractorLineLength: 1
-  m_LineLength: 10
+  m_LineLength: 20
   m_WidthCurve:
     serializedVersion: 2
     m_Curve:
@@ -11104,8 +11104,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 518981056772562757}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.676, y: 0.033, z: -0.353}
-  m_LocalScale: {x: 0.64686, y: 0.029959077, z: 0.64686}
+  m_LocalPosition: {x: -0.676, y: 0, z: -0.353}
+  m_LocalScale: {x: 1.0374341, y: 0.04804837, z: 1.0374341}
   m_Children:
   - {fileID: 518981055422811075}
   - {fileID: 518981055139654937}
