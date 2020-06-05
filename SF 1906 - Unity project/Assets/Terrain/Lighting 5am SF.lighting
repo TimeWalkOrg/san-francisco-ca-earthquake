@@ -9,7 +9,7 @@ LightingSettings:
   m_Name: Lighting 5am SF
   serializedVersion: 2
   m_GIWorkflowMode: 0
-  m_EnableBakedLightmaps: 1
+  m_EnableBakedLightmaps: 0
   m_EnableRealtimeLightmaps: 0
   m_RealtimeEnvironmentLighting: 1
   m_BounceScale: 1
@@ -17,7 +17,7 @@ LightingSettings:
   m_IndirectOutputScale: 2.41
   m_UsingShadowmask: 0
   m_BakeBackend: 1
-  m_LightmapMaxSize: 1024
+  m_LightmapMaxSize: 4096
   m_BakeResolution: 40
   m_Padding: 2
   m_TextureCompression: 1
