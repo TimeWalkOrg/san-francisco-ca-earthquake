@@ -15,12 +15,14 @@ Screenshot of pre-Alpha version (work in progress):
 
 ![Screenshot of TimeWalk SF](SF1906_Screenshot01.JPG)
 
-SketchUp model examples below:
+Youtube 4K video of 1906 film "A Walk Down Market Street":
+
+[![](http://img.youtube.com/vi/VO_1AdYRGW8/0.jpg)](https://youtu.be/VO_1AdYRGW8?t=290 "A Walk Down Market Street (April 14, 1906)")
+
+
+SketchUp model examples:
 
 ![Screenshot of models](/Models%20-%20Originals/Nathan%20Schwartzman%20SketchUp%20models.png)
 
 
-Link to Youtube of 1906 film "A Walk Down Market Street":
-
-[![](http://img.youtube.com/vi/VO_1AdYRGW8/0.jpg)](http://www.youtube.com/watch?v=VO_1AdYRGW8 "A Walk Down Market Street (April 14, 1906)")
 
