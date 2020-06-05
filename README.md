@@ -7,7 +7,10 @@ A Unity3D-based VR/AR reconstruction of the 1906 San Francisco earthquake
 - Built with Blender and SketchUp architectural models of actual buildings
 - Using Unity XR Plug-in framework and Universal Render Pipeline
 
+Screenshot of pre-Alpha version (work in progress):
+
+![Screenshot of TimeWalk SF](SF1906_Screenshot01.JPG)
 
 SketchUp model examples below:
 
-![Screenshot of models](/SketchUp%20models/Nathan%20Schwartzman%20SketchUp%20models.png)
+![Screenshot of models](/Models%20-%20Originals/Nathan%20Schwartzman%20SketchUp%20models.png)
