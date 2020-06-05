@@ -1,4 +1,4 @@
-# The San Francisco earthquake
+# The 1906 San Francisco Earthquake
 A Unity3D-based VR/AR reconstruction of the 1906 San Francisco earthquake
 
 - [Project overview](https://docs.google.com/presentation/d/1fh4PxKjVihUx4L9ye4-c10UD2I99XBIDHBUYT_71iDI/edit?usp=sharing)
@@ -6,6 +6,9 @@ A Unity3D-based VR/AR reconstruction of the 1906 San Francisco earthquake
 - ["1906 San Francisco earthquake" on Wikipedia](https://en.wikipedia.org/wiki/1906_San_Francisco_earthquake)
 - Built with Blender and SketchUp architectural models of actual buildings
 - Using Unity XR Plug-in framework and Universal Render Pipeline
+- Will include animations and sound FX for earthquake event at 5:12am on April 18, 1906
+- Will enable TimeWalk.org "time travel": view Market Street in 1906 and 2020
+- See Open-source project priorities on Github here: https://github.com/TimeWalkOrg/san-francisco-ca-earthquake/projects/1
 
 Screenshot of pre-Alpha version (work in progress):
 
