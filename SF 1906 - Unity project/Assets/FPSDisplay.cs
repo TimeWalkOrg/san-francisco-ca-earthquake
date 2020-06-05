@@ -23,7 +23,7 @@ public class FPSDisplay : MonoBehaviour
         float msec = deltaTime * 1000.0f;
         float fps = 1.0f / deltaTime;
         string text = string.Format("\n\n{1:0.0} fps (running average)", msec, fps);
-//        string text = string.Format("\n\n{0:0.0} ms ({1:0.} fps)", msec, fps);
+        //        string text = string.Format("\n\n{0:0.0} ms ({1:0.} fps)", msec, fps);
         GUI.Label(rect, text, style);
     }
 }
