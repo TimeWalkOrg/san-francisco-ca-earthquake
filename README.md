@@ -22,4 +22,5 @@ SketchUp model examples below:
 
 Link to Youtube of 1906 film "A Walk Down Market Street":
 
-![Screenshot of models](/Models%20-%20Originals/Nathan%20Schwartzman%20SketchUp%20models.png)
+[![](http://img.youtube.com/vi/VO_1AdYRGW8/0.jpg)](http://www.youtube.com/watch?v=VO_1AdYRGW8 "A Walk Down Market Street (April 14, 1906)")
+
