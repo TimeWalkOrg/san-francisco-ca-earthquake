@@ -1,0 +1,8 @@
+This Burning Building FX pack is a collection of dramatic visual effects to set a building on fire.
+
+Load the Burning_Building_FX.unity for an example scene, or drag your required Prefab from the Project window into the Hierarchy window; there are four window effects sets (A to D) which are designed to be placed in a building's windows and then scaled up or down to correctly fit. Additional effects prefabs such as smoke, flickering lights and sound effects are also available to be placed individually.
+
+Have fun!
+
+If you have any questions then please get in touch at bendurrant@rivermillstudios.com
+

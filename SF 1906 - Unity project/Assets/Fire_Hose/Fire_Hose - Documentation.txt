@@ -1,0 +1,16 @@
+This Fire Hose pack is a collection of fireman's hose effects to complement the Burning Building FX pack (available on the Unity Asset Store here: https://www.assetstore.unity3d.com/#!/content/67482).
+
+Load the Fire_Hose.unity for an example scene, or drag your required Prefab from the Project window into the Hierarchy window. Remember to parent the Hire_Hose to your chosen Unity camera for it correctly move and orientate with your view, setting the transforms for both the camera and hose to 0 before doing so.
+
+Two effects are included to simulate the hose water running back out of the building - Window_Water_A and Window_Water_B (both in the Prefabs folder). There’s also an Emergency_Light stobing effect and three hose audio files to help complete a scene.
+
+Have fun!
+
+If you have any questions then please get in touch at bendurrant@rivermillstudios.com
+
+
+
+
+
+	
+
