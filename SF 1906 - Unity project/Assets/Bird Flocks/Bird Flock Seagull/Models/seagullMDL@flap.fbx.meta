@@ -1,0 +1,140 @@
+fileFormatVersion: 2
+guid: 2ffa345d85db89f4ba7b4af109442a4e
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Lfoot
+    100002: Lwing4
+    100004: Lwing3
+    100006: Lwing2
+    100008: Lwing
+    100010: Rgoot4
+    100012: Lfoot4
+    100014: Lfoot3
+    100016: Lfoot2
+    100018: Seagull_MESH
+    100020: Rfoot3
+    100022: Rfoot2
+    100024: Rfoot
+    100026: Head2
+    100028: Head
+    100030: Tail2
+    100032: Tail
+    100034: Rwing4
+    100036: Rwing3
+    100038: Rwing2
+    100040: Rwing
+    100042: Pivot
+    100044: //RootNode
+    400000: Lfoot
+    400002: Lwing4
+    400004: Lwing3
+    400006: Lwing2
+    400008: Lwing
+    400010: Rgoot4
+    400012: Lfoot4
+    400014: Lfoot3
+    400016: Lfoot2
+    400018: Seagull_MESH
+    400020: Rfoot3
+    400022: Rfoot2
+    400024: Rfoot
+    400026: Head2
+    400028: Head
+    400030: Tail2
+    400032: Tail
+    400034: Rwing4
+    400036: Rwing3
+    400038: Rwing2
+    400040: Rwing
+    400042: Pivot
+    400044: //RootNode
+    4300000: Seagull_MESH
+    7400002: flap
+    11100000: //RootNode
+    13700000: Pivot
+    13700002: Seagull_MESH
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 0
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 4
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: flap
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 12
+      wrapMode: 4
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .0250000004
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 0
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 180
+    splitTangentsAcrossUV: 1
+    normalImportMode: 1
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
