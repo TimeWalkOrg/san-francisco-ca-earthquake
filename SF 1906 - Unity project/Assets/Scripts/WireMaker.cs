@@ -6,8 +6,7 @@ public class WireMaker : MonoBehaviour
 {
     private LineRenderer lineRenderer;
     public Transform startPoint;
-    public Transform midPoint;
-    // private Vector3 midPoint;
+    public Transform midPoint; // IGNORED below (find a way to delete this safely?)
     public Transform endPoint;
     public float wireSag = 0.0f;
     
@@ -16,10 +15,11 @@ public class WireMaker : MonoBehaviour
         lineRenderer = GetComponent<LineRenderer>();
         //get our midway point
             // TODO: Calculate a mid-point halfway between the end points, decrease .y by wireSag
-            // Vector3 midPointPosition = (startPoint.position + endPoint.position) / 2f;
-            // Debug.Log("midPointPosition.y = " + midPointPosition.y);
-            //midPointPosition -= Vector3.up * wireSag;
-            //midPoint.position = midPointPosition;
+            Vector3 midPointPosition = (startPoint.position + endPoint.position) / 2f;
+            midPointPosition += Vector3.down * wireSag;
+            Debug.Log("startPoint.position.y = " + startPoint.position.y + "midPointPosition.y = " + midPointPosition.y);
+
+            midPoint.position = midPointPosition;
     }
 
     void Update()
