@@ -1,0 +1,14 @@
+1.0.2
+Changed:
+- Wire sagging is now restored when Undo is performed
+- Slight improvement to wind animation (takes effect upon modifying a wire type preset)
+
+Fixed:
+- GUI not positioning correctly on some devices, causing GUI elements to appear off-screen
+
+1.0.1
+Changed:
+- Wire sagging parameter is now exposed on the Wire component. 
+
+1.0.0
+Initial release
