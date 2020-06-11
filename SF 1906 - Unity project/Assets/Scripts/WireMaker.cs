@@ -17,7 +17,7 @@ public class WireMaker : MonoBehaviour
             // TODO: Calculate a mid-point halfway between the end points, decrease .y by wireSag
             Vector3 midPointPosition = (startPoint.position + endPoint.position) / 2f;
             midPointPosition += Vector3.down * wireSag;
-            Debug.Log("startPoint.position.y = " + startPoint.position.y + "midPointPosition.y = " + midPointPosition.y);
+            // Debug.Log("startPoint.position.y = " + startPoint.position.y + "midPointPosition.y = " + midPointPosition.y);
 
             midPoint.position = midPointPosition;
     }

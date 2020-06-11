@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5088780129913459338
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5088780129913097898}
+  - component: {fileID: 5088780129906370410}
+  m_Layer: 0
+  m_Name: Seagull Flock - Free Roam
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5088780129913097898
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5088780129913459338}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 5.364769}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5088780129906370410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5088780129913459338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5564f499341508a43819ce17743cd92b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _childPrefab: {fileID: 11400000, guid: 8959680a71dad41409592e7904dd36d2, type: 3}
+  _childAmount: 57
+  _slowSpawn: 0
+  _spawnSphere: 15
+  _spawnSphereHeight: 5
+  _spawnSphereDepth: 15
+  _minSpeed: 4
+  _maxSpeed: 6
+  _minScale: 0.7
+  _maxScale: 1
+  _soarFrequency: 0.82
+  _soarAnimation: soar
+  _flapAnimation: flap
+  _idleAnimation: idle
+  _diveValue: 4
+  _diveFrequency: 0.09
+  _minDamping: 0.6
+  _maxDamping: 0.45
+  _waypointDistance: 5.21
+  _minAnimationSpeed: 0.8
+  _maxAnimationSpeed: 1.2
+  _randomPositionTimer: 0
+  _positionSphere: 0
+  _positionSphereHeight: 0
+  _positionSphereDepth: 0
+  _childTriggerPos: 0
+  _forceChildWaypoints: 0
+  _forcedRandomDelay: 2
+  _flatFly: 1
+  _flatSoar: 1
+  _birdAvoid: 0
+  _birdAvoidHorizontalForce: 1000
+  _birdAvoidDown: 0
+  _birdAvoidUp: 0
+  _birdAvoidVerticalForce: 300
+  _birdAvoidDistanceMax: 5
+  _birdAvoidDistanceMin: 5
+  _soarMaxTime: 0
+  _avoidanceMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  _roamers: []
+  _posBuffer: {x: 0, y: 0, z: 5.364769}
+  _updateDivisor: 1
+  _newDelta: 0
+  _updateCounter: 0
+  _activeChildren: 0
+  _groupChildToNewTransform: 0
+  _groupTransform: {fileID: 0}
+  _groupName: 
+  _groupChildToFlock: 1
+  _startPosOffset: {x: 0, y: 0, z: 0}
+  _thisT: {fileID: 5088780129913097898}
