@@ -12779,6 +12779,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rooftop (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 5858437481975729947, guid: 63974a08d3643fa47b9773e92bbd135b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6679836123038543931, guid: 63974a08d3643fa47b9773e92bbd135b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.7654
@@ -24212,7 +24216,7 @@ GameObject:
   - component: {fileID: 724486445}
   - component: {fileID: 724486448}
   m_Layer: 9
-  m_Name: Photo - A Walk Down Market Street 04mins 50secs
+  m_Name: Photo to fade out - "A Trip Down Market Street" 04mins 50secs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39576,7 +39580,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1111613360
 Transform:
   m_ObjectHideFlags: 0
@@ -42748,7 +42752,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1199181484
 Transform:
   m_ObjectHideFlags: 0
@@ -73491,7 +73495,7 @@ GameObject:
   - component: {fileID: 2127705014}
   - component: {fileID: 2127705013}
   m_Layer: 5
-  m_Name: UI Canvas
+  m_Name: HUD (Location, Date, Weather) - UI Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76395,7 +76399,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &3680060084036753631
 GameObject:
   m_ObjectHideFlags: 0
@@ -77912,8 +77916,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3676593658138678716}
   m_LocalRotation: {x: 0, y: 0.37983996, z: 0, w: 0.9250522}
-  m_LocalPosition: {x: -187.86212, y: 8.2071825e-29, z: 45.773617}
-  m_LocalScale: {x: 0.99999994, y: 1, z: 0.99999994}
+  m_LocalPosition: {x: -188.5, y: 8.2071825e-29, z: 43.7}
+  m_LocalScale: {x: 1.1982999, y: 1.1983, z: 1.1982999}
   m_Children: []
   m_Father: {fileID: 5006512735888969091}
   m_RootOrder: 10
@@ -78138,7 +78142,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &5822580296830777287
 GameObject:
   m_ObjectHideFlags: 0
