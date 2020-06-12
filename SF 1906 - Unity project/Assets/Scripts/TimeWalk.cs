@@ -9,7 +9,7 @@ public class TimeWalk : MonoBehaviour
 {
     public float earthquakeStartDelayInSeconds = 10.0f;
     private bool earthquakeIsStarted = false;
-    public AudioSource earthquakeAudioClip;
+    //public AudioSource earthquakeAudioClip;
     public GameObject earthquakeObjects;
     public CameraShake cameraShake;
     public TextMeshPro currentDateUIText;
@@ -39,7 +39,7 @@ public class TimeWalk : MonoBehaviour
         if(!earthquakeIsStarted && (timeNow> earthquakeStartDelayInSeconds))
         {
             cameraShake.shakecamera(); // starts the camera shaking effect
-            earthquakeAudioClip.Play(); // plays the sound
+            //earthquakeAudioClip.Play(); // plays the sound
             earthquakeIsStarted = true;
             earthquakeObjects.gameObject.SetActive(true);
         }
