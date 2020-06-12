@@ -47,8 +47,9 @@ MonoBehaviour:
   controllerCharacteristics: 576
   controllerPrefabs:
   - {fileID: 7634514334346526944, guid: 0540e32b498ef284f8e1dcf80dfccd58, type: 3}
-  - {fileID: 919132149155446097, guid: 2c69ecd214a631748962849751687171, type: 3}
-  - {fileID: 919132149155446097, guid: 4219e262dfe7d6a4c948ba13f5dffba0, type: 3}
-  - {fileID: 919132149155446097, guid: 59afffcbb4c542b41b50bc42b1481442, type: 3}
-  - {fileID: 919132149155446097, guid: e10e4bebc9c175147927718306ab42e2, type: 3}
-  handModelPrefab: {fileID: 5686134208185362930, guid: 1fd3a7c43c8190f4d8c167ebde694364, type: 3}
+  - {fileID: -927199367670048503, guid: 2c69ecd214a631748962849751687171, type: 3}
+  - {fileID: -927199367670048503, guid: 4219e262dfe7d6a4c948ba13f5dffba0, type: 3}
+  - {fileID: -927199367670048503, guid: 59afffcbb4c542b41b50bc42b1481442, type: 3}
+  - {fileID: -927199367670048503, guid: e10e4bebc9c175147927718306ab42e2, type: 3}
+  handModelPrefab: {fileID: 5686134208185362930, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+    type: 3}
