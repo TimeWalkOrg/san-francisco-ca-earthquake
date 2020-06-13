@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5150056463670815139}
   - component: {fileID: 7793394635207318501}
   m_Layer: 0
-  m_Name: Realtime + FPS Player
+  m_Name: Normcore Realtime with FPS Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61,3 +61,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPosition: {fileID: 0}
+  playerPrefab: {fileID: 0}

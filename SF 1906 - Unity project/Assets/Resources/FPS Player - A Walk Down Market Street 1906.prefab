@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 650550881869053175}
   - component: {fileID: -1860695417546654517}
   - component: {fileID: -5091007290634192501}
+  - component: {fileID: 4066432415209000000}
   m_Layer: 0
-  m_Name: FPS 03 - A Walk Down Market Street 1906
+  m_Name: FPS Player - A Walk Down Market Street 1906
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94,9 +95,6 @@ MonoBehaviour:
   _isRootPrefabView: 1
   _components:
   - componentID: 1
-    component: {fileID: 114197934464315244, guid: 94b4e7961a23042c9a18d80c9f340444, type: 3}
-    componentIDHasBeenUsed: 1
-  - componentID: 2
     component: {fileID: -5091007290634192501}
     componentIDHasBeenUsed: 1
   _parentView: {fileID: 0}
@@ -119,6 +117,19 @@ MonoBehaviour:
   _syncScale: 1
   _syncVelocity: 1
   _maintainOwnershipWhileSleeping: 0
+--- !u!114 &4066432415209000000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650550881869053177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f49168246bf544a41a48520b361b859a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PrefabCameraToActivate: {fileID: 650550883523976855}
 --- !u!1 &650550883224935753
 GameObject:
   m_ObjectHideFlags: 0
