@@ -98,11 +98,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'A: start quake (tbd)
+  m_text: 'A: Applause
 
-    B: firehose (tbd)
+    B: Sound FX
 
-    Stick up: Teleport'
+    Stick up: Teleport
+
+    Stick down:
+    Avatar'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -288,7 +291,7 @@ MonoBehaviour:
   m_LineType: 1
   m_MaxRaycastDistance: 30
   m_ReferenceFrame: {fileID: 0}
-  m_Velocity: 16
+  m_Velocity: 8
   m_Acceleration: 9.8
   m_AdditionalFlightTime: 0.5
   m_EndPointDistance: 30
@@ -324,7 +327,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2715230942848865688, guid: 8c18de14b4ae4ea4d8e82754cae18c46, type: 3}
+  - {fileID: 2100000, guid: 95c1191d2c6ee5c4998869da8403564d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -348,7 +351,7 @@ LineRenderer:
   m_Positions: []
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.04
+    widthMultiplier: 0.02
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -422,9 +425,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e988983f96fe1dd48800bcdfc82f23e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LineWidth: 0.04
+  m_LineWidth: 0.02
   m_OverrideInteractorLineLength: 1
-  m_LineLength: 15
+  m_LineLength: 10
   m_WidthCurve:
     serializedVersion: 2
     m_Curve:
@@ -538,8 +541,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 518981054858672434}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.17869, z: 0}
-  m_LocalScale: {x: 1.0341997, y: 0.047898572, z: 1.0341997}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.64686, y: 0.029959077, z: 0.64686}
   m_Children:
   - {fileID: 518981056550318130}
   - {fileID: 518981055661488500}
@@ -5362,6 +5365,7 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10503,6 +10507,7 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10798,7 +10803,7 @@ MonoBehaviour:
   m_LineType: 1
   m_MaxRaycastDistance: 30
   m_ReferenceFrame: {fileID: 0}
-  m_Velocity: 16
+  m_Velocity: 8
   m_Acceleration: 9.8
   m_AdditionalFlightTime: 0.5
   m_EndPointDistance: 30
@@ -10834,7 +10839,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2715230942848865688, guid: 8c18de14b4ae4ea4d8e82754cae18c46, type: 3}
+  - {fileID: 2100000, guid: f41a1510c3551894f9e24c9887baa057, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10858,7 +10863,7 @@ LineRenderer:
   m_Positions: []
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.04
+    widthMultiplier: 0.02
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -10932,9 +10937,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e988983f96fe1dd48800bcdfc82f23e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LineWidth: 0.04
+  m_LineWidth: 0.02
   m_OverrideInteractorLineLength: 1
-  m_LineLength: 15
+  m_LineLength: 10
   m_WidthCurve:
     serializedVersion: 2
     m_Curve:
@@ -11156,7 +11161,7 @@ MonoBehaviour:
   m_CameraGameObject: {fileID: 518981055786863858}
   m_TrackingOriginMode: 2
   m_TrackingSpace: 3
-  m_CameraYOffset: 2
+  m_CameraYOffset: 1.8
 --- !u!114 &518981056587239086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11218,7 +11223,7 @@ MonoBehaviour:
   leftTeleportRay: {fileID: 518981056076624253}
   rightTeleportRay: {fileID: 518981054772763255}
   teleportActivationButton: 14
-  activationThreshold: 0.3
+  activationThreshold: 0.01
 --- !u!1 &518981056666029858
 GameObject:
   m_ObjectHideFlags: 0
@@ -11280,8 +11285,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 518981056772562757}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.17213, z: 0}
-  m_LocalScale: {x: 1.0200336, y: 0.04724247, z: 1.0200336}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.64686, y: 0.029959077, z: 0.64686}
   m_Children:
   - {fileID: 518981055422811075}
   - {fileID: 518981055139654937}
@@ -11389,7 +11394,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5871275278440705548
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11470,9 +11475,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'X: tbd
+  m_text: 'X: Weather
 
-    Y: tbd
+    Y: Confetti
 
     Stick up: Teleport'
   m_isRightToLeft: 0
