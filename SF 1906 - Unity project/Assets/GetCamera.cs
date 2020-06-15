@@ -12,7 +12,6 @@ public class GetCamera : MonoBehaviour
     public Camera PrefabCameraToActivate;
 
     private Camera mainCamera;
-    private Canvas HUDCanvas;
 
     void Start()
     {
@@ -26,21 +25,12 @@ public class GetCamera : MonoBehaviour
         mainCamera = Camera.main;
         //PrefabCameraToActivate.enabled = false; // disable player camera until prefab is "Awake"
         //mainCamera.enabled = true;
-        HUDCanvas = GameObject.FindGameObjectWithTag("HUDCanvas").GetComponent<Canvas>();
-        Debug.Log("HUDCanvas.name = " + HUDCanvas.name);
-
         EnablePlayerCamera();
-        MoveHUDToPlayerCamera();
     }
 
     void EnablePlayerCamera()
     {
         // mainCamera.enabled = false;
         PrefabCameraToActivate.enabled = true;
-    }
-    void MoveHUDToPlayerCamera()
-    {
-        HUDCanvas.renderMode = RenderMode.ScreenSpaceCamera;
-        HUDCanvas.worldCamera = PrefabCameraToActivate.GetComponent<Camera>();
     }
 }
