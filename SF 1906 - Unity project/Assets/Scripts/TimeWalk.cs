@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class TimeWalk : MonoBehaviour
 {
@@ -9,8 +12,8 @@ public class TimeWalk : MonoBehaviour
     //public AudioSource earthquakeAudioClip;
     public GameObject earthquakeObjects;
     public CameraShake cameraShake;
-    public TextMeshPro m_Date;
-    public TextMeshPro m_Time;
+    public TextMeshPro currentDateUIText;
+    public TextMeshPro currentTimeUIText;
     private DateTime startClockTime;
     public int startYear;
     public int startMonth;
@@ -26,7 +29,7 @@ public class TimeWalk : MonoBehaviour
         DateTime startActualTime = DateTime.Now;
         timeDelta = startClockTime - startActualTime;
         string startDateString = startClockTime.ToString("MMMM dd, yyyy");
-        m_Date.text = startDateString;
+        currentDateUIText.text = startDateString;
         earthquakeObjects.gameObject.SetActive(false);
     }
 
@@ -55,7 +58,7 @@ public class TimeWalk : MonoBehaviour
         string hour = time.Hour.ToString();
         string minute = LeadingZero(time.Minute);
         string second = LeadingZero(time.Second);
-        m_Time.text = hour + ":" + minute + ":" + second + " " + appendTimeText;
+        currentTimeUIText.text = hour + ":" + minute + ":" + second + " " + appendTimeText;
     }
     string LeadingZero(int n)
     {
