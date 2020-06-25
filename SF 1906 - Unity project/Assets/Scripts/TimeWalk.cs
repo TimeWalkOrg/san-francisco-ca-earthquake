@@ -9,8 +9,8 @@ public class TimeWalk : MonoBehaviour
     //public AudioSource earthquakeAudioClip;
     public GameObject earthquakeObjects;
     public CameraShake cameraShake;
-    public TextMeshProUGUI m_Date;
-    public TextMeshProUGUI m_Time;
+    public TextMeshPro m_Date;
+    public TextMeshPro m_Time;
     private DateTime startClockTime;
     public int startYear;
     public int startMonth;

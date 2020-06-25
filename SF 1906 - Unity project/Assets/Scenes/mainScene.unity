@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.15528587, g: 0.17732158, b: 0.18984604, a: 1}
+  m_IndirectSpecularColor: {r: 0.15528622, g: 0.177322, b: 0.18984644, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -14850,8 +14850,8 @@ MonoBehaviour:
   earthquakeStartDelayInSeconds: 59
   earthquakeObjects: {fileID: 1578615358}
   cameraShake: {fileID: 314044302}
-  currentDateUIText: {fileID: 272205104}
-  currentTimeUIText: {fileID: 1973321499}
+  m_Date: {fileID: 272205104}
+  m_Time: {fileID: 1973321499}
   startYear: 1906
   startMonth: 4
   startDay: 12
@@ -14874,7 +14874,7 @@ MonoBehaviour:
   shakeDuration: 12
   shakeAmount: 0.03
   decreaseFactor: 1
-  shaketrue: 0
+  shaketrue: 1
 --- !u!82 &314044303
 AudioSource:
   m_ObjectHideFlags: 0
