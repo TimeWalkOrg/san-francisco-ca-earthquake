@@ -23,6 +23,8 @@ public class TimeWalk : MonoBehaviour
     public int startSecond;
     private TimeSpan timeDelta;
 
+    public GameObject Hud;
+
     void Start()
     {
         startClockTime = new DateTime(startYear, startMonth, startDay, startHour, startMinute, startSecond);
@@ -59,6 +61,12 @@ public class TimeWalk : MonoBehaviour
         string minute = LeadingZero(time.Minute);
         string second = LeadingZero(time.Second);
         currentTimeUIText.text = hour + ":" + minute + ":" + second + " " + appendTimeText;
+
+        if(Input.GetKeyDown(KeyCode.H)) SwitchHud();
+    }
+    public void SwitchHud()
+    {
+        Hud.SetActive(!Hud.activeInHierarchy);
     }
     string LeadingZero(int n)
     {
