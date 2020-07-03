@@ -8,172 +8,172 @@ SketchUpImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Blue2
-    second: {fileID: 2100000, guid: bc1d4d769fef17f43894915200b56c97, type: 2}
+    second: {fileID: 2100000, guid: ac060e99a709cb1478fdee41e8c439e9, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Distressed American Flag Bumper cropped for 3d
-    second: {fileID: 2100000, guid: 4d7055ac5aade634f8c0143b961b3b87, type: 2}
+    second: {fileID: 2100000, guid: e4fc77c199482cc4aaa6747e84a7b2a7, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Google Earth Snapshot1
-    second: {fileID: 2100000, guid: 444c6eb4b5c8db1429a150f13d2960d1, type: 2}
+    second: {fileID: 2100000, guid: 4f15415fd26186240813abe78a599dcb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Red2
-    second: {fileID: 2100000, guid: 0f7168756debd5a4eb9be00c4e02cb4f, type: 2}
+    second: {fileID: 2100000, guid: 52cfbf187df263449bbb5785a9be80d6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Sophie_Hair
-    second: {fileID: 2100000, guid: 5513b576ed097fe4b8829a8ea18dddff, type: 2}
+    second: {fileID: 2100000, guid: 11707370499011f40900af4e93f2b552, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Sophie_Shirt_Blue
-    second: {fileID: 2100000, guid: bc14370714982a249b0d3d3df8dce605, type: 2}
+    second: {fileID: 2100000, guid: 1f2b9560445e19941b44529a56db8c41, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Sophie_Shirt_Gray
-    second: {fileID: 2100000, guid: cc389326477ff5e478fecd5809544015, type: 2}
+    second: {fileID: 2100000, guid: dbb2f14a13576e14dbaf63ae2d67be9c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Sophie_Shirt_Red
-    second: {fileID: 2100000, guid: f96a2b8cd206c344aaa3001f8bb15ebc, type: 2}
+    second: {fileID: 2100000, guid: e57b7cfa54f44434ba1cbebf6e514d08, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Sophie_Shoes
-    second: {fileID: 2100000, guid: 595d5d1cb9ee7d34ca35358f24a987cd, type: 2}
+    second: {fileID: 2100000, guid: d37fcd07f8890914fbadef55b65488eb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Sophie_Shoes2
-    second: {fileID: 2100000, guid: b4fe2f22385d4c74490a375ee85163a6, type: 2}
+    second: {fileID: 2100000, guid: 582bd99f3699aaf46a2246ecb4cea559, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Sophie_Skin
-    second: {fileID: 2100000, guid: 5d6926e799ce475418933f13328e5c9a, type: 2}
+    second: {fileID: 2100000, guid: 3540a311e78d41a42966568d50305fcb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Sophie_Skirt
-    second: {fileID: 2100000, guid: 783e874302fb6714cb25a315d36d4ba1, type: 2}
+    second: {fileID: 2100000, guid: 4699a5df718fdf243b90ccb8d9bde768, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: White
-    second: {fileID: 2100000, guid: 5f0e33105f02d12479db37e0bac9faf5, type: 2}
+    second: {fileID: 2100000, guid: 9b7cef9a04d5e464490022c9fc624cd7, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: '[Color_006]'
-    second: {fileID: 2100000, guid: fa2cd9d0b60749e44a28934359624043, type: 2}
+    second: {fileID: 2100000, guid: 9bd5ebbc310df7546bb33d251e3190b1, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: '[Color_007]'
-    second: {fileID: 2100000, guid: 4188409e7dcdc244c92efe078685d96c, type: 2}
+    second: {fileID: 2100000, guid: 4150a7273a534f8458308e480df15b32, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: '[Color_007]1'
-    second: {fileID: 2100000, guid: 43a16f366feb4324280576cfcd4889b7, type: 2}
+    second: {fileID: 2100000, guid: 464aa5373b4ea7f4cb95a315d0f746fa, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: '[Color_008]'
-    second: {fileID: 2100000, guid: 2c6b01758ddf39449bb15b896ff59eca, type: 2}
+    second: {fileID: 2100000, guid: 067628ebb317caa42972a47aaecb3807, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: _1
-    second: {fileID: 2100000, guid: 30c6f32919017f44cb7498fd949aa230, type: 2}
+    second: {fileID: 2100000, guid: 1e13330ec3880cc4c84168415f1f4971, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: _10
-    second: {fileID: 2100000, guid: d5d14cec99f660d42aff817f9a2f723b, type: 2}
+    second: {fileID: 2100000, guid: c1763fa4edb886541b5693519b8f0188, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: _12
-    second: {fileID: 2100000, guid: 466e65fbc8a103b41b5f07a0c74d5916, type: 2}
+    second: {fileID: 2100000, guid: ba86e39bdfe3a3948b51e44a089b35e4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: _13
-    second: {fileID: 2100000, guid: a67fb5d2ab1475443bf0a6d2f466c948, type: 2}
+    second: {fileID: 2100000, guid: 7033a4191af255f4981966494cefcb41, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: _14
-    second: {fileID: 2100000, guid: 8c8205144e496d24083a612b8aa753d4, type: 2}
+    second: {fileID: 2100000, guid: 82e782e7130e09241b835b9896d5a153, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: _15
-    second: {fileID: 2100000, guid: 11f8bee8d7d69d84c96dc45a9644c655, type: 2}
+    second: {fileID: 2100000, guid: 0ce882a30ea9f414296f8277ee3ce1e3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: _16
-    second: {fileID: 2100000, guid: f80e6cb22f7f53049a42c59d6fc5ade0, type: 2}
+    second: {fileID: 2100000, guid: ca68e5d26fdc4db499d57e0987a1f269, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: _18
-    second: {fileID: 2100000, guid: e61d21ce13b84a24d9f8fb09fdeaa6ab, type: 2}
+    second: {fileID: 2100000, guid: c53e87c8c80856b4e95d0e1fad3f75dc, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: _6
-    second: {fileID: 2100000, guid: 1674103da1716b342806d761d05b556a, type: 2}
+    second: {fileID: 2100000, guid: ee57799153754824ca295504f72deda7, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: _7
-    second: {fileID: 2100000, guid: 7a4f688c5f7ef01478a17653a2522632, type: 2}
+    second: {fileID: 2100000, guid: 964ae3ab5ee894a478b4ea72e620b416, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: _8
-    second: {fileID: 2100000, guid: 2b6be60cdf1927b4b805149918f2a78e, type: 2}
+    second: {fileID: 2100000, guid: c22dce6ff2b1bd541ab4366652fabd53, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: _9
-    second: {fileID: 2100000, guid: 623d2bbfe4b3ca0448e6001473e6195f, type: 2}
+    second: {fileID: 2100000, guid: c3bf128ea43e00843ae5df3ca52cc092, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: _Gainsboro_
-    second: {fileID: 2100000, guid: 62742dff8c86f444ca665cbb0eb11edb, type: 2}
+    second: {fileID: 2100000, guid: fb43f6abf956cc145bc7ce83443a4f96, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: _defaultMat
-    second: {fileID: 2100000, guid: 97ee628b884ecac4789b2126097ece6a, type: 2}
+    second: {fileID: 2100000, guid: 9cc6ebe9512562a4db9b024892c66cd6, type: 2}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Clock_Tower_-_Palace_of_Westminster,_London_-_September_2006-2 copy
-    second: {fileID: 2800000, guid: 56c0ca2c06d71b4409e123511ecc0dfa, type: 3}
+    second: {fileID: 2800000, guid: ae424a8e76888924c92961df24ea6be7, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Distressed American Flag Bumper cropped for 3d
-    second: {fileID: 2800000, guid: 4b5de0b5bce57d448b58875995c05888, type: 3}
+    second: {fileID: 2800000, guid: c59948451a744ac419f219365eb65df9, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Google Earth Snapshot
-    second: {fileID: 2800000, guid: 5deb7fb1e78f85845b294c861e9fe0c8, type: 3}
+    second: {fileID: 2800000, guid: 13cade415cb6e534ab5ee8ada203c01a, type: 3}
   materials:
     materialImportMode: 1
     materialName: 2
