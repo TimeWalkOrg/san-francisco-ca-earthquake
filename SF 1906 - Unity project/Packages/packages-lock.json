@@ -1,19 +1,5 @@
 {
   "dependencies": {
-    "com.normalvr.normcore": {
-      "version": "2.0.0-preview.7",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://normcore-registry.normcore.io"
-    },
-    "com.unity.collab-proxy": {
-      "version": "1.3.7",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://packages.unity.com"
-    },
     "com.unity.ext.nunit": {
       "version": "1.0.0",
       "depth": 1,
@@ -115,7 +101,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.textmeshpro": {
-      "version": "3.0.0-preview.14",
+      "version": "3.0.0",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -165,7 +151,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.management": {
-      "version": "3.2.10",
+      "version": "3.2.13",
       "depth": 0,
       "source": "registry",
       "dependencies": {
