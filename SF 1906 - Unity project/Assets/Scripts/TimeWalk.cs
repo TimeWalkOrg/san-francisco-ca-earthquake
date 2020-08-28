@@ -12,8 +12,13 @@ public class TimeWalk : MonoBehaviour
     //public AudioSource earthquakeAudioClip;
     public GameObject earthquakeObjects;
     public CameraShake cameraShake;
+    public TextMeshPro locationHUD;
+    public TextMeshPro dateHUD;
+    public TextMeshPro timeHUD;
+    public TextMeshPro weatherHUD;
     public TextMeshPro currentDateUIText;
     public TextMeshPro currentTimeUIText;
+    public TextMeshPro hudVRText;
     private DateTime startClockTime;
     public int startYear;
     public int startMonth;
@@ -59,6 +64,20 @@ public class TimeWalk : MonoBehaviour
         string minute = LeadingZero(time.Minute);
         string second = LeadingZero(time.Second);
         currentTimeUIText.text = hour + ":" + minute + ":" + second + " " + appendTimeText;
+        timeHUD.text = currentTimeUIText.text;
+
+        //TODO: Update Date when clocks rolls past midnight!
+
+        UpdateVR();
+    }
+
+
+    void UpdateVR()
+    {
+        hudVRText.text = locationHUD.text + "\n\n"
+            + dateHUD.text + "\n"
+            + timeHUD.text + "\n"
+            + weatherHUD.text;
     }
     string LeadingZero(int n)
     {
