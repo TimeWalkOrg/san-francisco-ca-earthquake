@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.normalvr.normcore": {
+      "version": "2.0.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://normcore-registry.normcore.io"
+    },
     "com.unity.ext.nunit": {
       "version": "1.0.0",
       "depth": 1,
@@ -146,14 +153,14 @@
     },
     "com.unity.xr.legacyinputhelpers": {
       "version": "2.1.4",
-      "depth": 0,
+      "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.management": {
       "version": "3.2.13",
-      "depth": 0,
+      "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.unity.xr.legacyinputhelpers": "2.1.2",

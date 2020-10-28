@@ -9,10 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1251306160, guid: 5173c3ea7f8dbdc47871e62b3e5c7906, type: 3}
-  m_Name: InternalSettings
+  m_Script: {fileID: 1488926636, guid: 30f4fd177e1fad742be136a8237ab587, type: 3}
+  m_Name: NormcoreAppSettings
   m_EditorClassIdentifier: 
-  _migration:
-    lastPromptedVersion: 2
-    version: 2
-  _projectGUID: 7ed94b11-a0db-49b3-9e4c-4e9889e50e16
+  _normcoreAppKey: 
+  _matcherURL: wss://normcore-matcher.normcore.io:3000
