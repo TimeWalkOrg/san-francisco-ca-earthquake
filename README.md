@@ -13,16 +13,16 @@ A Unity3D-based VR/AR reconstruction of the 1906 San Francisco earthquake
 
 Screenshot of pre-Alpha version (work in progress):
 
-![Screenshot of TimeWalk SF](SF1906_Screenshot01.JPG)
+![Screenshot of TimeWalk SF](/Images/SF1906_Screenshot01.JPG)
 
 Youtube 4K video of 1906 film "A Walk Down Market Street" - Market Street approaching 3rd St. (click to view):
 
-[![](A%20Walk%20Down%20Market%20Street%20at%2004mins%2050secs.JPG)](https://youtu.be/VO_1AdYRGW8?t=290 "A Walk Down Market Street (April 14, 1906)")
+[![](/Images/A%20Walk%20Down%20Market%20Street%20at%2004mins%2050secs.JPG)](https://youtu.be/VO_1AdYRGW8?t=290 "A Walk Down Market Street (April 14, 1906)")
 
 
 SketchUp model examples:
 
-![Screenshot of models](/Models%20-%20Originals/Nathan%20Schwartzman%20SketchUp%20models.png)
+![Screenshot of models](/Images/Nathan%20Schwartzman%20SketchUp%20models.png)
 
 
 
