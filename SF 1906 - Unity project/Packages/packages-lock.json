@@ -1,10 +1,12 @@
 {
   "dependencies": {
     "com.normalvr.normcore": {
-      "version": "2.0.0-preview.7",
+      "version": "2.1.8",
       "depth": 0,
       "source": "registry",
-      "dependencies": {},
+      "dependencies": {
+        "com.unity.editorcoroutines": "1.0.0"
+      },
       "url": "https://normcore-registry.normcore.io"
     },
     "com.unity.collab-proxy": {
@@ -14,6 +16,13 @@
       "dependencies": {
         "com.unity.nuget.newtonsoft-json": "2.0.0"
       },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.editorcoroutines": {
+      "version": "1.0.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.ext.nunit": {
@@ -44,6 +53,13 @@
     "com.unity.ide.vscode": {
       "version": "1.2.3",
       "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.inputsystem": {
+      "version": "1.0.2",
+      "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
@@ -164,12 +180,15 @@
       }
     },
     "com.unity.xr.interaction.toolkit": {
-      "version": "0.9.4-preview",
+      "version": "1.0.0-pre.5",
       "depth": 0,
       "source": "registry",
       "dependencies": {
+        "com.unity.inputsystem": "1.0.2",
         "com.unity.ugui": "1.0.0",
-        "com.unity.xr.legacyinputhelpers": "1.3.11"
+        "com.unity.modules.audio": "1.0.0",
+        "com.unity.modules.imgui": "1.0.0",
+        "com.unity.xr.legacyinputhelpers": "2.1.7"
       },
       "url": "https://packages.unity.com"
     },
@@ -193,7 +212,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.management": {
-      "version": "4.0.1",
+      "version": "4.0.7",
       "depth": 0,
       "source": "registry",
       "dependencies": {
