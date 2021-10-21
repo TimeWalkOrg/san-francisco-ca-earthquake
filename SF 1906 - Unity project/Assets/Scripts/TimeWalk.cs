@@ -23,6 +23,9 @@ public class TimeWalk : MonoBehaviour
     public int startSecond;
     private TimeSpan timeDelta;
 
+    public GameObject stopwatch;
+    private StopwatchToWorld earthquakeTimerScript;
+
     void Start()
     {
         startClockTime = new DateTime(startYear, startMonth, startDay, startHour, startMinute, startSecond);
@@ -31,11 +34,16 @@ public class TimeWalk : MonoBehaviour
         string startDateString = startClockTime.ToString("MMMM dd, yyyy");
         currentDateUIText.text = startDateString;
         earthquakeObjects.gameObject.SetActive(false);
+
+        
+        earthquakeTimerScript = stopwatch.GetComponent<StopwatchToWorld>();
     }
 
     void Update()
     {
-        float timeNow = Time.realtimeSinceStartup;
+        //previous handling of earthquake timer. Doesn't synch status between players. 
+        //float timeNow = Time.realtimeSinceStartup;
+        float timeNow = earthquakeTimerScript.timeNow;
         if(!earthquakeIsStarted && (timeNow> earthquakeStartDelayInSeconds))
         {
             cameraShake.shakecamera(); // starts the camera shaking effect
