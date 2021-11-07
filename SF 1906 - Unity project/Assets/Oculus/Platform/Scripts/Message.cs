@@ -156,10 +156,6 @@ namespace Oculus.Platform
       Leaderboard_GetPreviousEntries                      = 0x4901DAC0,
       Leaderboard_WriteEntry                              = 0x117FC8FE,
       Leaderboard_WriteEntryWithSupplementaryMetric       = 0x72C692FA,
-      Livestreaming_GetStatus                             = 0x489A6995,
-      Livestreaming_LaunchLivestreamingFlow               = 0x6AB156BD,
-      Livestreaming_PauseStream                           = 0x369C7683,
-      Livestreaming_ResumeStream                          = 0x22526D8F,
       Matchmaking_Browse                                  = 0x1E6532C8,
       Matchmaking_Browse2                                 = 0x66429E5B,
       Matchmaking_Cancel                                  = 0x206849AF,
@@ -226,7 +222,6 @@ namespace Oculus.Platform
       User_GetSdkAccounts                                 = 0x67526A83,
       User_GetUserProof                                   = 0x22810483,
       User_LaunchFriendRequestFlow                        = 0x0904B598,
-      User_LaunchProfile                                  = 0x0A397297,
       Voip_GetMicrophoneAvailability                      = 0x744CE345,
       Voip_SetSystemVoipSuppressed                        = 0x453FC9AA,
 
@@ -345,6 +340,9 @@ namespace Oculus.Platform
       /// functions at any time to get the current state directly.
       Notification_Voip_SystemVoipState = 0x58D254A5,
 
+      /// Get vr camera related webrtc data channel messages for update.
+      Notification_Vrcamera_GetDataChannelMessageUpdate = 0x6EE4F33C,
+
       /// Get surface and update action from platform webrtc for update.
       Notification_Vrcamera_GetSurfaceUpdate = 0x37F21084,
 
@@ -438,7 +436,6 @@ namespace Oculus.Platform
     public virtual SdkAccountList GetSdkAccountList() { return null; }
     public virtual ShareMediaResult GetShareMediaResult() { return null; }
     public virtual string GetString() { return null; }
-    public virtual SystemPermission GetSystemPermission() { return null; }
     public virtual SystemVoipState GetSystemVoipState() { return null; }
     public virtual User GetUser() { return null; }
     public virtual UserAndRoomList GetUserAndRoomList() { return null; }
@@ -598,7 +595,6 @@ namespace Oculus.Platform
         case Message.MessageType.GroupPresence_SetLobbySession:
         case Message.MessageType.GroupPresence_SetMatchSession:
         case Message.MessageType.IAP_ConsumePurchase:
-        case Message.MessageType.Livestreaming_LaunchLivestreamingFlow:
         case Message.MessageType.Matchmaking_Cancel:
         case Message.MessageType.Matchmaking_Cancel2:
         case Message.MessageType.Matchmaking_ReportResultInsecure:
@@ -608,7 +604,6 @@ namespace Oculus.Platform
         case Message.MessageType.RichPresence_Set:
         case Message.MessageType.Room_LaunchInvitableUserFlow:
         case Message.MessageType.Room_UpdateOwner:
-        case Message.MessageType.User_LaunchProfile:
           message = new Message(messageHandle);
           break;
 
@@ -651,9 +646,6 @@ namespace Oculus.Platform
           message = new MessageWithLeaderboardDidUpdate(messageHandle);
           break;
 
-        case Message.MessageType.Livestreaming_GetStatus:
-        case Message.MessageType.Livestreaming_PauseStream:
-        case Message.MessageType.Livestreaming_ResumeStream:
         case Message.MessageType.Notification_Livestreaming_StatusChange:
           message = new MessageWithLivestreamingStatus(messageHandle);
           break;
@@ -785,6 +777,7 @@ namespace Oculus.Platform
         case Message.MessageType.Notification_ApplicationLifecycle_LaunchIntentChanged:
         case Message.MessageType.Notification_Room_InviteAccepted:
         case Message.MessageType.Notification_Voip_MicrophoneAvailabilityStateUpdate:
+        case Message.MessageType.Notification_Vrcamera_GetDataChannelMessageUpdate:
         case Message.MessageType.Notification_Vrcamera_GetSurfaceUpdate:
         case Message.MessageType.User_GetAccessToken:
           message = new MessageWithString(messageHandle);
@@ -1724,18 +1717,6 @@ namespace Oculus.Platform
     {
       return CAPI.ovr_Message_GetString(c_message);
     }
-  }
-  public class MessageWithSystemPermission : Message<SystemPermission>
-  {
-    public MessageWithSystemPermission(IntPtr c_message) : base(c_message) { }
-    public override SystemPermission GetSystemPermission() { return Data; }
-    protected override SystemPermission GetDataFromMessage(IntPtr c_message)
-    {
-      var msg = CAPI.ovr_Message_GetNativeMessage(c_message);
-      var obj = CAPI.ovr_Message_GetSystemPermission(msg);
-      return new SystemPermission(obj);
-    }
-
   }
   public class MessageWithSystemVoipState : Message<SystemVoipState>
   {

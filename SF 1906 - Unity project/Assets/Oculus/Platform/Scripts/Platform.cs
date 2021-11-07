@@ -1645,56 +1645,6 @@ namespace Oculus.Platform
 
   public static partial class Livestreaming
   {
-    /// Return the status of the current livestreaming session if there is one.
-    ///
-    public static Request<Models.LivestreamingStatus> GetStatus()
-    {
-      if (Core.IsInitialized())
-      {
-        return new Request<Models.LivestreamingStatus>(CAPI.ovr_Livestreaming_GetStatus());
-      }
-
-      return null;
-    }
-
-    /// Launch the Livestreaming Flow.
-    ///
-    public static Request LaunchLivestreamingFlow()
-    {
-      if (Core.IsInitialized())
-      {
-        return new Request(CAPI.ovr_Livestreaming_LaunchLivestreamingFlow());
-      }
-
-      return null;
-    }
-
-    /// Pauses the livestreaming session if there is one. NOTE: this function is
-    /// safe to call if no session is active.
-    ///
-    public static Request<Models.LivestreamingStatus> PauseStream()
-    {
-      if (Core.IsInitialized())
-      {
-        return new Request<Models.LivestreamingStatus>(CAPI.ovr_Livestreaming_PauseStream());
-      }
-
-      return null;
-    }
-
-    /// Resumes the livestreaming session if there is one. NOTE: this function is
-    /// safe to call if no session is active.
-    ///
-    public static Request<Models.LivestreamingStatus> ResumeStream()
-    {
-      if (Core.IsInitialized())
-      {
-        return new Request<Models.LivestreamingStatus>(CAPI.ovr_Livestreaming_ResumeStream());
-      }
-
-      return null;
-    }
-
     /// Indicates that the livestreaming session has been updated. You can use this
     /// information to throttle your game performance or increase CPU/GPU
     /// performance. Use Message.GetLivestreamingStatus() to extract the updated
@@ -2803,21 +2753,6 @@ namespace Oculus.Platform
       return null;
     }
 
-    /// Launch the profile of the given user. The profile surfaces information
-    /// about the user and supports relevant actions that the viewer may take on
-    /// that user, e.g. sending a friend request.
-    /// \param userID User ID for profile being viewed
-    ///
-    public static Request LaunchProfile(UInt64 userID)
-    {
-      if (Core.IsInitialized())
-      {
-        return new Request(CAPI.ovr_User_LaunchProfile(userID));
-      }
-
-      return null;
-    }
-
   }
 
   public static partial class UserDataStore
@@ -3023,6 +2958,16 @@ namespace Oculus.Platform
 
   public static partial class Vrcamera
   {
+    /// Get vr camera related webrtc data channel messages for update.
+    ///
+    public static void SetGetDataChannelMessageUpdateNotificationCallback(Message<string>.Callback callback)
+    {
+      Callback.SetNotificationCallback(
+        Message.MessageType.Notification_Vrcamera_GetDataChannelMessageUpdate,
+        callback
+      );
+    }
+
     /// Get surface and update action from platform webrtc for update.
     ///
     public static void SetGetSurfaceUpdateNotificationCallback(Message<string>.Callback callback)

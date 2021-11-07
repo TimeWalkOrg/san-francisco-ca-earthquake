@@ -769,7 +769,6 @@ public class LocomotionTeleport : MonoBehaviour
 	public void DoTeleport()
 	{
 		var character = LocomotionController.CharacterController;
-		character.enabled = false;
 		var characterTransform = character.transform;
 		var destTransform = _teleportDestination.OrientationIndicator;
 
@@ -790,7 +789,6 @@ public class LocomotionTeleport : MonoBehaviour
 
 		characterTransform.position = destPosition;
 		characterTransform.rotation = destRotation;
-		character.enabled = true;
 	}
 
 	/// <summary>

@@ -227,7 +227,7 @@ public class OVROverlay : MonoBehaviour
 
 	public int layerId { get; private set; } = 0; // The layer's internal handle in the compositor.
 
-	#endregion
+#endregion
 
 	private static Material tex2DMaterial;
 	private static Material cubeMaterial;
@@ -801,7 +801,7 @@ public class OVROverlay : MonoBehaviour
 
 	private void SetupEditorPreview()
 	{
-		#if UNITY_EDITOR
+#if UNITY_EDITOR
 			if (previewInEditor && previewObject == null)
 			{
 				previewObject = new GameObject();
@@ -825,7 +825,7 @@ public class OVROverlay : MonoBehaviour
 			|| shape == OverlayShape.SurfaceProjectedPassthrough;
 	}
 
-	#region Unity Messages
+#region Unity Messages
 
 	void Awake()
 	{
@@ -860,11 +860,11 @@ public class OVROverlay : MonoBehaviour
 		if (OVRManager.OVRManagerinitialized)
 			InitOVROverlay();
 
-	#if UNITY_EDITOR
+#if UNITY_EDITOR
 		if (previewObject != null) {
 			previewObject.SetActive(true);
 		}
-	#endif
+#endif
 	}
 
 	void InitOVROverlay()
@@ -902,11 +902,11 @@ public class OVROverlay : MonoBehaviour
 	void OnDisable()
 	{
 
-	#if UNITY_EDITOR
+#if UNITY_EDITOR
 		if (previewObject != null) {
 			previewObject.SetActive(false);
 		}
-	#endif
+#endif
 
 		if ((gameObject.hideFlags & HideFlags.DontSaveInBuild) != 0)
 			return;
@@ -943,11 +943,11 @@ public class OVROverlay : MonoBehaviour
 		DestroyLayerTextures();
 		DestroyLayer();
 
-	#if UNITY_EDITOR
+#if UNITY_EDITOR
 		if (previewObject != null) {
 			GameObject.DestroyImmediate(previewObject);
 		}
-	#endif
+#endif
 	}
 
 	bool ComputeSubmit(ref OVRPose pose, ref Vector3 scale, ref bool overlay, ref bool headLocked)

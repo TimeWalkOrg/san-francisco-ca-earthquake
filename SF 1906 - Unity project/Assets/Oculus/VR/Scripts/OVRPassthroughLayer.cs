@@ -23,15 +23,24 @@ public class OVRPassthroughLayer : MonoBehaviour
 	// Overlay type: overlay | underlay | none
 	public OVROverlay.OverlayType overlayType = OVROverlay.OverlayType.Overlay;
 
-	// The compositionDepth defines the order of the layers in composition. The overlay/underlay with smaller compositionDepth would be composited in the front of the overlay/underlay with larger compositionDepth.
+	// The compositionDepth defines the order of the layers in composition. The layer with smaller compositionDepth would be composited in the front of the layer with larger compositionDepth.
 	public int compositionDepth = 0;
 
-	//Property that can hide overlays when required. Should be false when present, true when hidden.
+	// Property that can hide layers when required. Should be false when present, true when hidden.
 	public bool hidden = false;
+
+	// Specify whether `colorScale` and `colorOffset` should be applied to this layer.
+	public bool overridePerLayerColorScaleAndOffset = false;
+
+	// Color scale is a factor applied to the pixel color values during compositing. The four components of the vector correspond to the R, G, B, and A values.
+	public Vector4 colorScale = Vector4.one;
+
+	// Color offset is a value which gets added to the pixel color values during compositing. The four components of the vector correspond to the R, G, B, and A values.
+	public Vector4 colorOffset = Vector4.zero;
 
 	// Add a GameObject to the Insight Passthrough projection surface. This is only applicable
 	// if the projection surface type is `UserDefined`.
-	// When `updateTransform` parameter is set to `true`, overlay will update the transform
+	// When `updateTransform` parameter is set to `true`, OVRPassthroughLayer will update the transform
 	// of the surface mesh every frame. Otherwise only the initial transform is recorded.
 	public void AddSurfaceGeometry(GameObject obj, bool updateTransform = false)
 	{
@@ -40,7 +49,7 @@ public class OVRPassthroughLayer : MonoBehaviour
 
 	// Add a GameObject to the Insight Passthrough projection surface. This is only applicable
 	// if the projection surface type is `UserDefined`.
-	// When `updateTransform` parameter is set to `true`, overlay will update the transform
+	// When `updateTransform` parameter is set to `true`, OVRPassthroughLayer will update the transform
 	// of the surface mesh every frame. Otherwise only the initial transform is recorded.
 	// Calling code can specify additional `worldToTrackingSpace` transform, which will be
 	// applied to the mesh transform each time the transfrom is set or updated.
@@ -49,7 +58,7 @@ public class OVRPassthroughLayer : MonoBehaviour
 	{
 		if (projectionSurfaceType != ProjectionSurfaceType.UserDefined)
 		{
-			Debug.LogError("Overlay is not configured for surface projected passthrough.");
+			Debug.LogError("Passthrough layer is not configured for surface projected passthrough.");
 			return;
 		}
 
@@ -546,6 +555,9 @@ public class OVRPassthroughLayer : MonoBehaviour
 		passthroughOverlay.currentOverlayType = overlayType;
 		passthroughOverlay.compositionDepth = compositionDepth;
 		passthroughOverlay.hidden = hidden;
+		passthroughOverlay.overridePerLayerColorScaleAndOffset = overridePerLayerColorScaleAndOffset;
+		passthroughOverlay.colorScale = colorScale;
+		passthroughOverlay.colorOffset = colorOffset;
 	}
 
 	#endregion

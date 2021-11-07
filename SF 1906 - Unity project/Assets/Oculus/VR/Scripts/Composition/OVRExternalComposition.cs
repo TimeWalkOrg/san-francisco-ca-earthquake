@@ -167,9 +167,9 @@ public class OVRExternalComposition : OVRComposition
 #if USING_MRC_COMPATIBLE_URP_VERSION
 			var foregroundCamData = foregroundCamera.GetUniversalAdditionalCameraData();
 			if (foregroundCamData != null)
-            {
+			{
 				foregroundCamData.allowXRRendering = false;
-            }
+			}
 #elif USING_URP
 			Debug.LogError("Using URP with MRC is only supported with URP version 10.0.0 or higher. Consider using Unity 2020 or higher.");
 #else
