@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ClingPoint
   - Stopwatch
+  - LobbyName
   layers:
   - Default
   - TransparentFX

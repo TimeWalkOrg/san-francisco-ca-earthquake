@@ -9,11 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Lobby Scenes/Lobby.unity
     guid: d3ac1b8fdc1255547b6c8362ed49f727
   - enabled: 1
-    path: Assets/Scenes/Lobby Scenes/Lobby Blue.unity
-    guid: 6716081cefdf6e64aa709d5534b71914
-  - enabled: 1
-    path: Assets/Scenes/Lobby Scenes/Lobby Cube.unity
-    guid: af793b4524eb9244a8969cccf5ebac2e
+    path: Assets/Scenes/mainScene.unity
+    guid: 560667ef387520d42a14b5aebed30fb3
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 35027636fdeb1c4439eb67890c20fa53, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: 50640c83560d9a54fa880dc6fbdaebe0, type: 2}
