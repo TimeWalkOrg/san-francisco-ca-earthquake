@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: TimeWalk
-  productName: SF 1906 - Normcore Synchronization
+  productName: Normcore Lobby
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -136,6 +136,8 @@ PlayerSettings:
   bundleVersion: .4
   preloadedAssets:
   - {fileID: 0}
+  - {fileID: 11400000, guid: 50640c83560d9a54fa880dc6fbdaebe0, type: 2}
+  - {fileID: -5888908642418661430, guid: 2e64f910d377d6840b1fc6f7ed22610d, type: 2}
   - {fileID: -4913950815449908626, guid: 64ad8ca84196bc048a8a912484e7f2a2, type: 2}
   - {fileID: 11400000, guid: 35027636fdeb1c4439eb67890c20fa53, type: 2}
   metroInputSource: 0

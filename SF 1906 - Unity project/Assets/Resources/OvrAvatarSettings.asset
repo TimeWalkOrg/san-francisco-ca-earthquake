@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1488926636, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
-  m_Name: NormcoreAppSettings
+  m_Script: {fileID: 11500000, guid: 70c2f484f132c044097f03d65cac3b24, type: 3}
+  m_Name: OvrAvatarSettings
   m_EditorClassIdentifier: 
-  _normcoreAppKey: ac4fe7e1-4be2-450d-844f-089948344b89
-  _matcherURL: wss://normcore-matcher.normcore.io:3000
+  ovrAppID: 
+  ovrGearAppID: 
