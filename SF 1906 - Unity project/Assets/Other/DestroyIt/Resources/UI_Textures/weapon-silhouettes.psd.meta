@@ -51,7 +51,7 @@ TextureImporter:
       213: 21300030
     second: weapon-silhouettes_15
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 1
@@ -71,6 +71,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -79,9 +81,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 1
     aniso: 16
-    mipBias: -100
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -102,9 +104,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -491,6 +497,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      weapon-silhouettes_7: 21300014
+      weapon-silhouettes_15: 21300030
+      weapon-silhouettes_2: 21300004
+      weapon-silhouettes_1: 21300002
+      weapon-silhouettes_8: 21300016
+      weapon-silhouettes_13: 21300026
+      weapon-silhouettes_4: 21300008
+      weapon-silhouettes_6: 21300012
+      weapon-silhouettes_0: 21300000
+      weapon-silhouettes_12: 21300024
+      weapon-silhouettes_3: 21300006
+      weapon-silhouettes_14: 21300028
+      weapon-silhouettes_10: 21300020
+      weapon-silhouettes_5: 21300010
+      weapon-silhouettes_9: 21300018
+      weapon-silhouettes_11: 21300022
   spritePackingTag: 
   pSDRemoveMatte: 1
   pSDShowRemoveMatteOption: 1
